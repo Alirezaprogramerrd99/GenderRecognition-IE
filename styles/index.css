@@ -1,0 +1,254 @@
+/* this element selector addes background image to the webpage */
+body {
+  background-image: url("../images/communication3.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+/* this element selector is for white rectangle.
+   in this CSS block I seted the values of this
+   parameters to show the white rectangle in appropriate position and style.
+*/
+#infoBox {
+  position: relative;
+  width: 450px;
+
+  margin-top: 20%;
+
+  margin-left: auto;
+  margin-right: auto;
+
+  border: 2px outset #d8cece;
+  border-radius: 20px;
+  background-color: rgba(255, 255, 255, 0.5);
+  padding: 90px 5px 90px 5px;
+  box-sizing: border-box;
+  /* padding: 25px; */
+}
+
+/* this id selector is for error message to show to user when an error 
+   happens (server problem or bad name input) the position of this block is 
+   absolute. 
+*/
+
+#errorMessage {
+  position: absolute;
+  font-size: xx-small;
+  font-weight: bold;
+  color: rgb(173, 7, 7);
+  font-family: monospace;
+  left: 65px;
+  bottom: 132px;
+}
+
+/* this selector that use pseudo class is for some nice effect when the user
+  hovers on the white rectangle.  
+*/
+#infoBox:hover {
+  background-color: rgba(255, 255, 255, 0.46);
+}
+
+/* this selector is upper class for textBox and simple text message
+   I used for efficiency to reduce codes
+   and then I used 2 class attrs to more uniquely discribe 
+   the properties of input-textBox and simple text for showing 
+   to user. in some way I used inheritance.
+*/
+
+.inputName {
+  position: absolute;
+  bottom: 155px;
+}
+
+/* more specific discribing the propetis of input-textbox  
+*/
+.inputName.showTxt {
+  margin-left: 20px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: small;
+}
+
+/* more specific discribing the propetis of input-textbox  
+*/
+
+.inputName.txtBox {
+  margin-left: 65px;
+  border: 2px inset rgb(37, 149, 177);
+  border-radius: 7px;
+}
+
+/* more specific discribing the propetis of input-textbox if user clicks it will
+  change to an other color.
+*/
+
+.inputName.txtBox:focus {
+  background-color: rgb(203, 255, 255);
+}
+
+/* this CSS block is for discribing the features of the Mr or Ms simple text. 
+*/
+
+.Mr-Ms {
+  position: absolute;
+  bottom: 170px;
+  margin-left: 20px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: large;
+  font-weight: bold;
+}
+
+/*this selector is for discribing the general details of the male radio btn 
+  and it's text. in some way I used inheritance for radio btn and it's text. 
+*/
+
+.male {
+  position: absolute;
+  margin-left: 20px;
+  bottom: 125px;
+}
+
+/* this selector discribes more detail about the front of male btn text.
+*/
+
+.male.txt {
+  left: 25px;
+  top: 100px;
+  font-size: small;
+}
+
+/*this selector is for discribing the general details of the female radio btn 
+  and it's text. in some way I used inheritance for radio btn and it's text. 
+*/
+
+.female {
+  position: absolute;
+  margin-left: 20px;
+  bottom: 105px;
+}
+
+/* this selector discribes more detail about the front of female btn text.
+*/
+
+.female.txt {
+  left: 25px;
+  top: 120px;
+  font-size: small;
+}
+
+/* this selector discribes more detail about submit btn element
+   its position and its style.
+*/
+
+#submitBtn {
+  position: absolute;
+  bottom: 50px;
+  left: 25px;
+  border: 2px outset rgb(37, 149, 177);
+  border-radius: 5px;
+}
+
+/* this selector is for nice hover effect when user
+   hovers near the submit btn.
+*/
+
+#submitBtn:hover {
+  background-color: rgb(205, 243, 243);
+}
+
+/* this selector is for nice active effect when user
+   presses the submit btn, it's color will be changed very nicely.
+*/
+
+#submitBtn:active {
+  background-color: aqua;
+}
+
+/* this selector is for details of savedAnswer Text box
+   discribes it's position + styles.
+*/
+
+#savedAnswerTextBox {
+  position: absolute;
+  left: 250px;
+  bottom: 48px;
+  border: 2px outset rgb(37, 149, 177);
+  border-radius: 10px;
+  font-weight: bold;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+
+/* this selector is for details of savedAnswer uper Text 
+   discribes it's position + styles. 
+*/
+
+.savedAnswerTxt {
+  position: absolute;
+  left: 250px;
+  bottom: 110px;
+  font-size: large;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: bold;
+}
+
+/* this selector discribes more detail about clear btn element
+   its position and its style.
+*/
+
+#clearBtn {
+  position: absolute;
+  left: 250px;
+  bottom: 20px;
+  border: 2px outset rgb(37, 149, 177);
+  border-radius: 5px;
+}
+
+/* this selector is for nice hover effect when user
+   hovers near the clear btn.
+*/
+
+#clearBtn:hover {
+  background-color: rgb(205, 243, 243);
+}
+
+/* this selector is for nice active effect when user
+   presses the clear btn, it's color will be changed very nicely.
+*/
+
+#clearBtn:active {
+  background-color: aqua;
+}
+
+/*this class selector describes general details about prediction text + textBox
+  like general positioning.
+ */
+
+.prediction {
+  position: absolute;
+  left: 250px;
+}
+
+/*this class selector describes more specific details about uper simple text of the
+  prediction text box.
+ */
+
+.prediction.txt {
+  bottom: 190px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: large;
+  font-weight: bold;
+}
+
+/*this class selector describes more specific details about the
+  prediction text box and its styles.
+ */
+
+#predictionTextBox {
+  bottom: 145px;
+  border: 2px outset rgb(37, 149, 177);
+  border-radius: 10px;
+  font-size: small;
+  font-weight: bold;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}

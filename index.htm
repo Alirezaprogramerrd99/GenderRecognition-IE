@@ -1,0 +1,89 @@
+<!-- 
+  /*
+   NOTE:
+   project has been implemented using (cookie) and (local-storage).
+   both of implementaions are in scripts folder index.js is cookie implemetation
+   index2.js is local storage implementation.
+
+   default is been set in line 92 of this file to index2.js (local-storage implementation)
+   but you can change it to index.js to see cookie implementation.
+*/
+ -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MidTerm</title>
+    <link rel="stylesheet" href="/styles/index.css" />
+  </head>
+
+  <body>
+    <div id="infoBox">
+      <p id="errorMessage"></p>
+
+      <p class="Mr-Ms">Mr. or Ms.</p>
+
+      <form target="_blank" method="get">
+        <label for="nameTxtBox" class="inputName showTxt">Name:</label>
+        <input
+          type="text"
+          class="inputName txtBox"
+          id="nameTxtBox"
+          name="name"
+          value=""
+          size="15"
+          maxlength="32"
+        /><br />
+
+        <label for="maleBtn" class="male txt">Male</label><br />
+        <input
+          type="radio"
+          id="maleBtn"
+          class="male"
+          name="gender"
+          value="male"
+        />
+
+        <label for="femaleBtn" class="female txt">Female</label><br />
+        <input
+          type="radio"
+          id="femaleBtn"
+          class="female"
+          name="gender"
+          value="female"
+        />
+
+        <!-- <input type="submit" value="Submit" id="submitBtn" /> -->
+        <label for="savedAnswerTextBox" class="savedAnswerTxt"
+          >Saved Answer</label
+        >
+
+        <textarea
+          name="savedAnswer"
+          id="savedAnswerTextBox"
+          cols="20"
+          rows="3"
+          readonly
+        ></textarea>
+
+        <label for="predictionTextBox" class="prediction txt">Prediction</label>
+        <textarea
+          name="prediction"
+          id="predictionTextBox"
+          class="prediction"
+          cols="15"
+          rows="2"
+          readonly
+        ></textarea>
+      </form>
+
+      <button id="clearBtn">Clear</button>
+      <button id="submitBtn">Submit</button>
+
+      <!-- change it here to index.js if you want to see cookie implementation. -->
+      <script src="/scripts/index2.js" defer></script>
+    </div>
+  </body>
+</html>
